@@ -17,14 +17,17 @@
   <div class="container">
 
     <div class="codrops-header" id="headerdiv">
+      <div class="aligncenter">
         <h1>Is my password on a list? <span>Check if your password has been leaked on a password list.</span></h1>
         <nav class="codrops-demos">
           <a href="index.php" class="current-demo">Tool</a>
           <a href="secure.php">Is it safe?</a>
         </nav>
+      </div>
     </div>
 
     <div class="content bgcolor" id="contentdiv">
+      <div class="aligncenter">
         <h2 id="task">Check your password</h2>
       <form method="post" action="" class="input input--kozakura">
         <input class="input__field input__field--kozakura" type="password" id="input-8" name="password" autocomplete="off"/>
@@ -35,12 +38,17 @@
           <path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"/>
         </svg>
       </form>
+      </div>
     </div>
 
 <!-- php begin -->
 <?php
     $password = $_POST['password'];
     $passlist1 = file("10million.txt");
+	  
+    if(empty($_POST['password'])) {
+      $found = "emptypass";
+    }
 
     if(!empty($_POST['password'])) {
       if(in_array($password."\n", $passlist1)){
