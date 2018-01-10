@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/form.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 </head>
@@ -16,7 +17,7 @@
 <body>
   <div class="container">
 
-    <div class="codrops-header" id="headerdiv">
+    <div class="codrops-header animated fadeInDown" id="headerdiv">
       <div class="aligncenter">
         <h1>Is it safe? <span>Read this if you have concerns about the security of this site.</span></h1>
         <nav class="codrops-demos">
@@ -26,7 +27,7 @@
       </div>
     </div>
 
-    <div class="content bgcolor" id="contentdiv">
+    <div class="content bgcolor animated fadeInUp" id="contentdiv">
       <div class="aligncenter">
       <h2 id="task">Security</h2>
       <p>
