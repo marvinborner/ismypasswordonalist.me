@@ -17,13 +17,31 @@
   <div class="container">
 
     <div class="codrops-header" id="headerdiv">
+      <div class="aligncenter">
         <h1>Is it safe? <span>Read this if you have concerns about the security of this site.</span></h1>
         <nav class="codrops-demos">
           <a href="index.php">Tool</a>
           <a href="secure.php" class="current-demo">Is it safe?</a>
         </nav>
+      </div>
     </div>
 
     <div class="content bgcolor" id="contentdiv">
+      <div class="aligncenter">
       <h2 id="task">Security</h2>
+      <p>
+        You might have concerns if you should enter your password on our website. <br />
+        It's really good to have these concerns but we can guarantee that we don't save the passwords on our server or somewhere else.<br />
+        We use professional password hashing and SSL encryption (https) to ensure that your passwords aren't getting caught on their way.<br />
+        This project is also completely opensource so you can see the complete code including the client-invisible PHP:<br /><br />
+        <a class="github-button" href="https://github.com/marvinborner/ismypasswordonalist.me" data-icon="octicon-star" data-size="large" aria-label="Star marvinborner/ismypasswordonalist.me on GitHub">Project</a>
+      </p>
+      </div>
     </div>
+
+  </div>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
